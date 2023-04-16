@@ -23,9 +23,9 @@ body{
     justify-content: center;
     align-items: center;
   
-    background-color: #d640ce;/*#467599;*/
+    background-color: #40d695;/*#467599;*/
     border-bottom: 5px solid #fff;
-    box-shadow: 0 0 30px -18px #d640b3;
+    box-shadow: 0 0 30px -18px #40d695;
   
   }
   #title_inner_container{
@@ -169,7 +169,7 @@ body{
     color: #ccc;
   }
   #chat_input_send.enabled{
-    color: #d640c2;
+    color: #40d695;
     background-color: Transparent;
     cursor: pointer;
   
@@ -186,7 +186,7 @@ body{
     margin-top: 20px;
   }
   #chat_logout{
-    color: #b040d6;
+    color: #40d695;
     cursor: pointer;
   }
   #chat_logout:hover{
@@ -228,7 +228,7 @@ body{
   .enabled{
     transition: background-color 0.5s;
     color: #fff;
-    background-color: #d340d6; /*#5B7553;*/
+    background-color: #40d695; /*#5B7553;*/
     cursor: pointer;
   }
   #title_container.chat_title_container{
@@ -254,7 +254,7 @@ body{
     height: 40px;
     animation: spin 1s linear infinite;
   
-    border-top: 6px solid #d640bf;
+    border-top: 6px solid #40d695;
     border-bottom: 6px solid #1D3354;
     border-left: 6px solid #E9FFF9;
     border-right: 6px solid #E9FFF9;
@@ -273,7 +273,7 @@ body{
     100% {}
   }
   ::selection {
-    background-color: #d640c7;
+    background-color: #40d695;
     color: #fff;
   }
   /* width */
@@ -286,6 +286,6 @@ body{
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #d640d6;
+    background: #40d695;
     border-radius: 5px;
   }
