@@ -40,7 +40,7 @@ window.onload = function() {
   
         var title = document.createElement('h1')
         title.setAttribute('id', 'title')
-        title.textContent = 'grouptherapy'
+        title.textContent = 'DR. AI'
   
         title_inner_container.append(title)
         title_container.append(title_inner_container)
@@ -231,6 +231,21 @@ window.onload = function() {
             parent.refresh_chat()
           })
         })
+
+        const userAction = async() => {
+            console.log('Request Received');
+            const response = await fetch('https://yyycif3hjlcza7aixlb2qeqlge0nxnyg.lambda-url.us-east-1.on.aws/?user='+this.get_name()+'&message='+message);
+            console.log('Result Retured');
+            const myJson = await response.json();
+
+            var ai_response = myJson.message;
+            var tempName = this.get_name();
+            this.save_name('Dr. AI');
+            this.send_message(ai_response);
+            this.save_name(tempName);
+
+        }
+        userAction();
       }
       // Get name. Gets the username from localStorage
       get_name(){
@@ -333,5 +348,4 @@ window.onload = function() {
     if(app.get_name() != null){
       app.chat()
     }
-  }
   
